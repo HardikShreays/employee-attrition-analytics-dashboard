@@ -87,12 +87,6 @@ This preprocessing significantly improved the **analytical depth** of the dashbo
 
 ---
 
-## 🌐 Live Dashboard
-
-👉 [View on Tableau Public](#) *(Add your link here)*
-
----
-
 ## 📸 Dashboard Preview
 
 ![Dashboard](images/dashboard_preview.png)
