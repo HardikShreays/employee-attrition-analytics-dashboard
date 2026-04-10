@@ -1,6 +1,6 @@
-# 📊 Employee Attrition Analytics Dashboard
+# Employee Attrition Analytics Dashboard
 
-## 🔍 Overview
+## Overview
 
 This project analyzes employee attrition using the **IBM HR Analytics dataset** to uncover key factors influencing employee turnover.
 
@@ -8,14 +8,14 @@ The goal is to combine **data preprocessing (Python)** with **interactive visual
 
 ---
 
-## 🧠 Problem Statement
+## Problem Statement
 
 Employee attrition is a critical challenge for organizations.
 Understanding *why employees leave* helps companies improve retention, reduce costs, and optimize workforce strategy.
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 * **Python** (Pandas, NumPy)
 * **Tableau** (Dashboard & Visualization)
@@ -23,7 +23,7 @@ Understanding *why employees leave* helps companies improve retention, reduce co
 
 ---
 
-## 🧹 Data Preprocessing (Python)
+## Data Preprocessing (Python)
 
 The dataset was cleaned and enhanced using Python:
 
@@ -46,9 +46,9 @@ This preprocessing significantly improved the **analytical depth** of the dashbo
 
 ---
 
-## 📊 Dashboard Features
+## Dashboard Features
 
-### 🔢 Key KPIs
+### Key KPIs
 
 * Total Employees: **1470**
 * Attrition Rate: **16.12%**
@@ -57,7 +57,7 @@ This preprocessing significantly improved the **analytical depth** of the dashbo
 
 ---
 
-### 📈 Visualizations
+### Visualizations
 
 * Department-wise employee distribution
 * Attrition by department (stacked comparison)
@@ -67,7 +67,7 @@ This preprocessing significantly improved the **analytical depth** of the dashbo
 
 ---
 
-### 🎛️ Interactivity
+### Interactivity
 
 * Dynamic filters:
 
@@ -78,22 +78,28 @@ This preprocessing significantly improved the **analytical depth** of the dashbo
 
 ---
 
-## 💡 Key Insights
+## Key Insights
 
-* 📉 **Sales department shows significantly higher attrition**
-* 💰 **Lower income groups are more likely to leave**
-* ⏳ **Employees with shorter tenure (0–2 years) have higher attrition**
-* 🧠 **Job roles with lower satisfaction show higher churn**
+* **Sales department shows significantly higher attrition**
+* **Lower income groups are more likely to leave**
+* **Employees with shorter tenure (0-2 years) have higher attrition**
+* **Job roles with lower satisfaction show higher churn**
 
 ---
 
-## 📸 Dashboard Preview
+## Live Dashboard
+
+[View on Tableau Public](#) *(Add your link here)*
+
+---
+
+## Dashboard Preview
 
 ![Dashboard](images/dashboard_preview.png)
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 employee-attrition-analytics/
@@ -115,7 +121,7 @@ employee-attrition-analytics/
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 1. Run Python script:
 
@@ -129,13 +135,13 @@ employee-attrition-analytics/
 
 ---
 
-## 🎯 Project Type
+## Project Type
 
-📌 Portfolio Project — focused on **data analytics + visualization + storytelling**
+Portfolio Project — focused on **data analytics + visualization + storytelling**
 
 ---
 
-## 💼 What This Project Demonstrates
+## What This Project Demonstrates
 
 * Data cleaning & feature engineering
 * Analytical thinking & insight generation
@@ -144,7 +150,7 @@ employee-attrition-analytics/
 
 ---
 
-## 🔗 Future Improvements
+## Future Improvements
 
 * Predictive modeling (attrition prediction using ML)
 * Deployment as a web dashboard (React + Flask)
@@ -152,10 +158,10 @@ employee-attrition-analytics/
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 Built as part of a **data analytics & visualization portfolio**.
 
 ---
 
-⭐ If you found this useful, consider starring the repo!
+If you found this useful, consider starring the repo!
