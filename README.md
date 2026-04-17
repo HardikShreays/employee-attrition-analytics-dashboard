@@ -1,167 +1,82 @@
 # Employee Attrition Analytics Dashboard
 
-## Overview
+## 📊 Overview
 
-This project analyzes employee attrition using the **IBM HR Analytics dataset** to uncover key factors influencing employee turnover.
+This project analyzes employee attrition using the **IBM HR Analytics dataset** to uncover key factors influencing employee turnover. The ultimate goal is to combine **data preprocessing (Python)** with **interactive visualization (Tableau)** to generate actionable, strategic business insights.
 
-The goal is to combine **data preprocessing (Python)** with **interactive visualization (Tableau)** to generate actionable business insights.
+## 🎯 Problem Statement
 
----
+Employee attrition is a critical challenge for modern organizations. Understanding *why employees leave* helps companies proactively improve retention strategies, reduce training and replacement costs, and optimize workforce planning.
 
-## Problem Statement
+## 💻 Tech Stack
 
-Employee attrition is a critical challenge for organizations.
-Understanding *why employees leave* helps companies improve retention, reduce costs, and optimize workforce strategy.
+* **Python** (Pandas, NumPy, Matplotlib, Seaborn) for EDA and pre-processing
+* **Tableau** for robust, interactive dashboards
+* **Data Engineering** for robust data cleaning, formatting, and feature engineering
 
----
+## ⚙️ Data Preprocessing
 
-## Tech Stack
+The dataset was rigorously cleaned and enhanced using Python scripts to maximize its value. 
 
-* **Python** (Pandas, NumPy)
-* **Tableau** (Dashboard & Visualization)
-* Data Cleaning & Feature Engineering
+### Key Optimization Steps:
+* **Data Pruning:** Removed redundant or low-variance columns (`EmployeeCount`, `StandardHours`, `Over18`).
+* **Categorical Handling:** Transformed categorical attrition targets into a unified binary format (`AttritionBinary`) for correlation analysis.
+* **Label Mapping:** Created intuitive categorical labels for metrics like Education levels, Job satisfaction, and Work-life balance.
+* **Feature Engineering:** Developed custom features (e.g., **Age Bands**, **Tenure Bands**, **Income Bands**) to provide nuanced analytical depth to the dashboard.
 
----
+## 💡 Key Insights
 
-## Data Preprocessing (Python)
+* **Departmental Risk:** The Sales and HR departments show significantly higher proportional attrition.
+* **Compensation Gap:** Lower income groups exhibit a demonstrably higher likelihood of leaving the organization.
+* **Tenure Vulnerability:** Employees with shorter tenure (0-2 years) are at the highest risk of attrition.
+* **Satisfaction Correlation:** Job roles reflecting overall lower job satisfaction score concurrently show a marked increase in churn rates.
 
-The dataset was cleaned and enhanced using Python:
+## 📂 Project Structure
 
-### Key Steps:
-
-* Removed redundant columns (`EmployeeCount`, `StandardHours`, `Over18`)
-* Converted categorical attrition into binary format (`AttritionBinary`)
-* Created meaningful categorical labels:
-
-  * Education levels
-  * Job satisfaction levels
-  * Work-life balance categories
-* Engineered new features:
-
-  * **Age Bands**
-  * **Tenure Bands**
-  * **Income Bands**
-
-This preprocessing significantly improved the **analytical depth** of the dashboard.
-
----
-
-## Dashboard Features
-
-### Key KPIs
-
-* Total Employees: **1470**
-* Attrition Rate: **16.12%**
-* Average Salary: **6503**
-* Average Tenure: **7.0 years**
-
----
-
-### Visualizations
-
-* Department-wise employee distribution
-* Attrition by department (stacked comparison)
-* Age distribution histogram
-* Salary vs Attrition (box plot)
-* Job role distribution
-
----
-
-### Interactivity
-
-* Dynamic filters:
-
-  * Department
-  * Gender
-  * Job Role
-* Fully interactive dashboard with cross-filtering
-
----
-
-## Key Insights
-
-* **Sales department shows significantly higher attrition**
-* **Lower income groups are more likely to leave**
-* **Employees with shorter tenure (0-2 years) have higher attrition**
-* **Job roles with lower satisfaction show higher churn**
-
----
-
-## Live Dashboard
-
-[View on Tableau Public](#) *(Add your link here)*
-
----
-
-## Dashboard Preview
-
-![Dashboard](images/dashboard_preview.png)
-
----
-
-## Project Structure
-
-```
+```text
 employee-attrition-analytics/
-│
-├── data/
-│   └── attrition_clean.csv
-│
-├── scripts/
-│   └── clean_attrition.py
-│
-├── dashboard/
-│   └── attrition_dashboard.twbx
-│
-├── images/
-│   └── dashboard_preview.png
-│
+├── data/                  # Cleaned and raw datasets
+├── scripts/               # Python processing and cleaning scripts
+├── notebooks/             # Exploratory Data Analysis (EDA) notebooks
+├── dashboard/             # Tableau workbook (tableau_dashboard.twbx)
+├── reports/               # Automated data profiling reports
+├── visuals/               # Generated analytical charts and dashboard previews
 └── README.md
 ```
 
----
+## 🚀 How to Run
 
-## How to Run
-
-1. Run Python script:
-
-   ```bash
-   python clean_attrition.py
-   ```
-2. Open Tableau file:
-
-   * `attrition_dashboard.twbx`
-3. Explore dashboard using filters
+1. **Pre-processing:** Check the `notebooks/` directory for exploratory scripts or run any root-level Python cleaning scripts to re-generate the cleaned datasets.
+2. **Launch Dashboard:**
+   * Open Tableau Desktop or Tableau Reader.
+   * Open `dashboard/tableau_dashboard.twbx`.
+3. **Explore:** Utilize the interactive filters (e.g., Department, Gender, Job Role) within the Tableau interface to dynamically slice the data.
 
 ---
 
-## Project Type
+## 📈 Dashboard and Key Visuals
 
-Portfolio Project — focused on **data analytics + visualization + storytelling**
+Below is a curated selection of the most critical visuals generated during this analysis, culminating in the final interactive dashboard.
 
----
+### 1. Interactive Dashboard Preview
+The comprehensive dashboard enables cross-filtering across demographic and professional metrics.
+![Dashboard Preview](visuals/dashboard_preview.png)
 
-## What This Project Demonstrates
+### 2. Overall Attrition Distribution
+A macro-level view of the overarching attrition breakdown within the organization.
+![Overall Attrition Donut](visuals/07_overall_attrition_donut.png)
 
-* Data cleaning & feature engineering
-* Analytical thinking & insight generation
-* Dashboard design (UI/UX principles)
-* Business-oriented problem solving
+### 3. Feature Correlation Heatmap
+Highlights the strongest correlating factors driving employee turnover (e.g., lower job level, shorter tenure, lower income).
+![Correlation Heatmap](visuals/01_correlation_heatmap.png)
 
----
+### 4. Attrition by Department & Job Role
+A granular breakdown illuminating exactly which teams and roles are most impacted by churn.
+![Attrition by Dept & Role](visuals/03_attrition_by_dept_role_marital.png)
 
-## Future Improvements
-
-* Predictive modeling (attrition prediction using ML)
-* Deployment as a web dashboard (React + Flask)
-* Real-time data integration
-
----
-
-## Author
-
-Built as part of a **data analytics & visualization portfolio**.
+### 5. Attrition by Experience & Tenure
+Demonstrates the high attrition risk clustered in the first 2-3 years of employment.
+![Attrition by Experience](visuals/06_attrition_by_tenure_experience.png)
 
 ---
-
-If you found this useful, consider starring the repo!
+*Built as a comprehensive portfolio project demonstrating end-to-end data processing, analytical thinking, and dashboard design. If you found this useful, consider starring the repository!*
