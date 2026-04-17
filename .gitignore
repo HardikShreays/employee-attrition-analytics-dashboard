@@ -1,0 +1,8 @@
+# Presentation guide (internal only)
+reports/presentation_guide.md
+
+# Virtual environment
+venv/
+
+# macOS
+.DS_Store
